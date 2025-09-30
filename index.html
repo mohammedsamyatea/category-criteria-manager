@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Food Categories Viewer</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  h2 { color: #2a7ae2; }
+  .category { margin-bottom: 20px; }
+  .criteria { margin-left: 20px; }
+</style>
+</head>
+<body>
+  <h1>Food Categories and Criteria</h1>
+  <div id="categories-container">Loading categories...</div>
+
+  <script>
+    fetch('categories.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('categories-container');
+        container.innerHTML = ''; // Clear loading text
+
+        data.forEach(cat => {
+          const catDiv = document.createElement('div');
+          catDiv.className = 'category';
+          catDiv.innerHTML = `
+            <h2>${cat.name}</h2>
+            <p><em>${cat.description}</em></p>
+            <strong>Criteria:</strong>
+            <ul class="criteria">
+              ${cat.criteria.map(c => `<li>${c}</li>`).join('')}
+            </ul>
+          `;
+          container.appendChild(catDiv);
+        });
+      })
+      .catch(err => {
+        document.getElementById('categories-container').innerText = 'Error loading categories';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
