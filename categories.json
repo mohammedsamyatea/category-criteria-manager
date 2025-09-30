@@ -1,0 +1,288 @@
+[
+  {
+    "id": "CAT-001",
+    "name": "Food Products",
+    "description": "All edible products including processed foods, beverages, and dietary supplements",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Microbiological Testing",
+            "details": "Testing for harmful bacteria, yeasts, and molds"
+          },
+          {
+            "name": "Nutritional Analysis",
+            "details": "Complete nutritional profile including macronutrients and micronutrients"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Allergen Testing",
+            "details": "Testing for common allergens like gluten, nuts, dairy"
+          },
+          {
+            "name": "Heavy Metals Testing",
+            "details": "Testing for lead, mercury, cadmium, and arsenic"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "XX",
+          "reason": "Trade embargo due to political sanctions"
+        },
+        {
+          "country_code": "YY",
+          "reason": "Food safety concerns and regulatory non-compliance"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "Ingredient List",
+          "details": "Must list all ingredients in descending order by weight"
+        },
+        {
+          "requirement": "Nutritional Information",
+          "details": "Must include calories, fats, carbohydrates, proteins per serving"
+        },
+        {
+          "requirement": "Allergen Declaration",
+          "details": "Must clearly state presence of major allergens"
+        }
+      ]
+    }
+  },
+  {
+    "id": "CAT-002",
+    "name": "Cosmetics",
+    "description": "Personal care products including skincare, makeup, and fragrances",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Safety Assessment",
+            "details": "Comprehensive safety evaluation of all ingredients"
+          },
+          {
+            "name": "Microbiological Testing",
+            "details": "Testing for bacterial and fungal contamination"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Patch Testing",
+            "details": "Dermatological testing for skin sensitivity"
+          },
+          {
+            "name": "Stability Testing",
+            "details": "Testing product stability under various conditions"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "ZZ",
+          "reason": "Regulatory restrictions on certain cosmetic ingredients"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "INCI Names",
+          "details": "All ingredients must be listed using International Nomenclature of Cosmetic Ingredients"
+        },
+        {
+          "requirement": "Usage Instructions",
+          "details": "Clear instructions for safe use and application"
+        },
+        {
+          "requirement": "Warnings",
+          "details": "Any necessary safety warnings or precautions"
+        }
+      ]
+    }
+  },
+  {
+    "id": "CAT-003",
+    "name": "Dairy Products",
+    "description": "Milk, cheese, yogurt, and other dairy-derived products",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Pathogen Testing",
+            "details": "Testing for Salmonella, Listeria, E. coli"
+          },
+          {
+            "name": "Antibiotic Residue Testing",
+            "details": "Ensuring no illegal antibiotic residues"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Fat Content Analysis",
+            "details": "Verification of declared fat content"
+          },
+          {
+            "name": "Protein Content Analysis",
+            "details": "Verification of declared protein content"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "RU",
+          "reason": "Sanitary and phytosanitary restrictions"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "Pasteurization Status",
+          "details": "Must indicate if product is pasteurized or raw"
+        },
+        {
+          "requirement": "Storage Instructions",
+          "details": "Clear instructions for refrigeration and shelf life"
+        }
+      ]
+    }
+  },
+  {
+    "id": "CAT-004",
+    "name": "Meat and Poultry",
+    "description": "Fresh, frozen, and processed meat and poultry products",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Pathogen Testing",
+            "details": "Testing for Salmonella, E. coli O157:H7, Campylobacter"
+          },
+          {
+            "name": "Veterinary Drug Residue Testing",
+            "details": "Ensuring compliance with maximum residue limits"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Species Identification",
+            "details": "Verification of animal species"
+          },
+          {
+            "name": "Moisture Content Analysis",
+            "details": "Checking for excessive water content"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "CN",
+          "reason": "Disease outbreaks and food safety concerns"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "Slaughter Date",
+          "details": "Date of slaughter or processing"
+        },
+        {
+          "requirement": "Country of Origin",
+          "details": "Must clearly state where the animal was raised and processed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "CAT-005",
+    "name": "Fresh Produce",
+    "description": "Fruits, vegetables, and other unprocessed plant-based foods",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Pesticide Residue Testing",
+            "details": "Ensuring compliance with maximum residue limits for pesticides"
+          },
+          {
+            "name": "Heavy Metal Screening",
+            "details": "Testing for lead, cadmium, arsenic in soil and produce"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Nutrient Analysis",
+            "details": "Verification of vitamin and mineral content"
+          },
+          {
+            "name": "Microbiological Screening",
+            "details": "Testing for common spoilage organisms"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "MX",
+          "reason": "Pest and disease control measures"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "PLU Code",
+          "details": "Price Look-Up code for identification"
+        },
+        {
+          "requirement": "Organic Certification",
+          "details": "If applicable, organic certification logo and details"
+        }
+      ]
+    }
+  },
+  {
+    "id": "CAT-006",
+    "name": "Beverages",
+    "description": "Non-alcoholic and alcoholic drinks, including juices, sodas, and spirits",
+    "criteria": {
+      "lab_analyses": {
+        "mandatory": [
+          {
+            "name": "Microbiological Stability Testing",
+            "details": "Ensuring product stability and absence of spoilage organisms"
+          },
+          {
+            "name": "Sugar Content Analysis",
+            "details": "Verification of declared sugar levels"
+          }
+        ],
+        "optional": [
+          {
+            "name": "Alcohol Content Verification",
+            "details": "For alcoholic beverages, verification of ABV"
+          },
+          {
+            "name": "Flavor Compound Analysis",
+            "details": "Ensuring consistency of flavor profile"
+          }
+        ]
+      },
+      "blocked_countries": [
+        {
+          "country_code": "SA",
+          "reason": "Religious and cultural restrictions on alcohol"
+        }
+      ],
+      "label_requirements": [
+        {
+          "requirement": "Volume Declaration",
+          "details": "Net volume of the product"
+        },
+        {
+          "requirement": "Nutritional Panel",
+          "details": "For non-alcoholic beverages, standard nutritional information"
+        },
+        {
+          "requirement": "Age Restriction Warning",
+          "details": "For alcoholic beverages, legal age consumption warning"
+        }
+      ]
+    }
+  }
+]
