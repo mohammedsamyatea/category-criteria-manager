@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Dairy Products",
+    "description": "Milk, cheese, yogurt and other dairy items",
+    "criteria": ["Expiry date on label", "Temperature control", "Country of origin"]
+  },
+  {
+    "id": 2,
+    "name": "Meat and Poultry",
+    "description": "All fresh and processed meats and poultry",
+    "criteria": ["Veterinary health certificate", "Halal certificate", "Origin country", "Processing plant approval"]
+  },
+  {
+    "id": 3,
+    "name": "Fresh Produce",
+    "description": "Vegetables, fruits, and fresh herbs",
+    "criteria": ["Pesticide residue analysis", "Country of origin", "Organic certificate (optional)"]
+  }
+]
